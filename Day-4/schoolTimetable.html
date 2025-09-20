@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Timetable</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f4f4f9;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 2px solid black;
+      background-color: rgb(2, 2, 48);
+      color: white;
+      border-radius: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: auto;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: rgb(2, 2, 48);
+      color: white;
+    }
+    
+    .break {
+      background-color: #ffe699;
+      font-weight: bold;
+    }
+    .short-break {
+      background-color: #ffe699;
+      font-weight: bold;
+    }
+    a{
+        margin: 20px;
+            text-decoration: none;
+            font-size: 30px;
+            border: 2px solid black;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+   
+  <h1>Class Timetable</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Time/Day</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9:00 - 10:00</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>History</td>
+        <td>Geography</td>
+        <td>Physical Education</td>
+      </tr>
+      <tr>
+        <td>10:00 - 11:00</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>History</td>
+        <td>Geography</td>
+        <td>Physical Education</td>
+      </tr>
+      <tr>
+        <td>11:00 - 12:00</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>History</td>
+        <td>Geography</td>
+        <td>Physical Education</td>
+      </tr>
+      <tr class="break">
+        <td>12:00 - 1:00</td>
+        <td colspan="6">Break</td>
+      </tr>
+      <tr>
+        <td>1:00 - 2:00</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>History</td>
+        <td>Geography</td>
+        <td>Physical Education</td>
+      </tr>
+      <tr>
+        <td>2:00 - 3:00</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>History</td>
+        <td>Geography</td>
+        <td>Physical Education</td>
+      </tr>
+      <tr class="short-break">
+        <td>3:00 - 3:15</td>
+        <td colspan="6">Short Break</td>
+      </tr>
+      <tr>
+        <td>3:15 - 4:00</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>History</td>
+        <td>Geography</td>
+        <td>Physical Education</td>
+      </tr>
+      <tr>
+        <td>4:00 - 5:00</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>History</td>
+        <td>Geography</td>
+        <td>Physical Education</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
