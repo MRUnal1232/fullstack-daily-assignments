@@ -1,0 +1,61 @@
+
+.top {
+  background: orange;
+  padding: 40px;
+  text-align: right;
+  height: 80px;
+}
+.top .box {
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  margin: 10px;
+  border: 2px dashed black;
+  background:rgb(133, 88, 5) ; 
+  color: black;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.middle {
+  background:white;
+  padding: 30px;
+  text-align: center;
+}
+.middle .circle {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border: 2px dashed black;
+  border-radius: 50%;
+  background: rgb(11, 11, 153);
+  text-align: center;
+  line-height: 60px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.bottom{
+  background: rgb(3, 72, 3);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start; 
+  gap: 10px;
+  border-color: 2px black;
+  height: 70px;
+}
+.bottom .vbox {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border: 2px dashed black;
+  border-radius: 50%;
+  background: rgb(1, 30, 1);
+  text-align: center;
+  line-height: 60px;
+  font-size: 15px;
+  font-weight: bold;
+}
