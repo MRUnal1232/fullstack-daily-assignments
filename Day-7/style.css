@@ -1,0 +1,50 @@
+body{
+    display: grid;
+    place-content: center;
+    min-height:100vh;
+    background-color:rgba(128, 128, 0, 0.769);
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    padding:20px;
+    background-color:#e0e0e0;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(1,2,3,5.2);
+}
+.circle{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.8);
+}
+.rounded{
+    width:150px;
+    height:150px;
+    border-radius:10% 50%;
+    object-fit:cover;
+    margin:10px 50px;
+    box-shadow:0 6px 9px rgba(244,245,245,0.4);
+
+}
+.polaroid{
+    width:150px;
+    height:150px;
+    border-radius: 50% 10% ;
+    object-fit: cover;
+    margin:10px  ;
+    box-shadow: 4px 8px rgba(143, 15, 66, 0.6);
+}
+.pill{
+    width:150px;
+    height:150px;
+    border-radius:30%;
+    object-fit:fill;
+    margin:10px;
+    box-shadow:0 4px 8px rgba(1, 13, 11, 0.2);
+}
