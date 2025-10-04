@@ -156,32 +156,86 @@ nav ul li a:hover {
   height: 80vh;
   background:white;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap:2em;
 }
 .content-text{
-  width: 50%;
-  height: 100%;
+  flex:1;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
   gap:1em;
+  padding:20px;
 }
 .content .background{
-  width: 40%;
-  height: 100%;
-  border: 1px solid red;
-  display: flex;;
+  width:60%;
+  border: 2px solid rgb(146, 133, 133);
+  display: flex;
 }
-.content .content-text.background.image1{
-  
-  background: ("image1.jpg");
+.content .background.image1{
+  background: url("image1.jpg");
   background-size: cover;
   background-position: center;
-  border-radius: 50%px;
-  object-fit: cover;
+  background-repeat: no-repeat;
 }
+.footer{
+  width: 100%;
+  padding:5em 5%;
+  background: #333;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap:1em;
+}
+.footer .box{
+  width:30%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items: start;
+  justify-content: start;
+  gap:0.5em;
+}
+.footer .box h2{
+  font-size: 1.25em;
+  color:white;
+  margin-bottom: 1em;
+}
+.footer .box p{
+  font-size:0.8;
+  color:silver;
+  text-align: justify;
+  line-height:22px;
+}
+.footer .box .links{
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content: start;
+  gap:0.9em
+}
+.footer .box .links a{
+  font-size:1.1em;
+  color:silver;
+  text-decoration: none;
+  transition: all ease-in 0.2s;
+  font-weight:520;
+}
+.footer .box .links a:hover{
+  transform: translateY(15px);
+  color:whitesmoke;
+}
+.copy-right{
+  width: 100%;
+  padding: 15px;
+  background:#222;
+}
+.copy-right p{
+  color:whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-
+}
