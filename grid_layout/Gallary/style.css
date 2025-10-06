@@ -1,0 +1,35 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gallery-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr 2fr;
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+.gallery-grid img:hover {
+  box-shadow: 0 8px 16px rgba(203, 12, 12, 0.2);
+}
