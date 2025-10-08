@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5%;
+}
+.header .links{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+}
+.header .links a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.8);
+    font-size: 530;
+    transition: all ease-in 0.25s;
+    position: relative;
+}
+.header .links a::after{
+    content:  '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 5px;
+    background: rgba(25, 66, 23, 0.788);
+    border-radius: 10px;
+    transform: all ease-in 0.25s;
+}
+.header .links a:hover::after{
+    width: 100%;
+
+}
+.header .links button{
+    padding: 10px 25px;
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0.8);
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-weight: 530;
+}
+.homepage{
+    width: 100%;
+    height: 110vh;
+    margin: 20px 10px;
+    padding: 0.5%;
+}
+.homepage .background{
+    width: 100%;
+    height: 100%;
+    background: url('https://fohfurniture.com/wp-content/uploads/2020/01/FOH-JCED202-scaled.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.homepage .background::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 0, 128, 0.153);
+
+
+}
