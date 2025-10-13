@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeadSoft Academy Registration</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2 class="form-title">Registration Form</h2>
+
+    <form class="horizontal-form" action="#" method="post">
+      <div class="form-field">
+        <label for="fullname">First Name</label>
+        <input type="text" id="First name" name="First Name">
+        <label for="fullname">Middle Name</label>
+        <input type="text" id="Middle Name" name="Middle Name">
+        <label for="fullname">Last Name</label>
+        <input type="text" id="Last Name" name="Last Name">
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email ID</label>
+        <input type="email" id="email" name="email" >
+      </div>
+
+      <div class="form-field">
+        <label for="mobile">Mobile No</label>
+        <input type="tel" id="mobile" name="mobile" >
+      </div>
+
+      <div class="form-field">
+        <label="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="">SELECT</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="course">Course</label>
+        <select id="course" name="course" required>
+          <option value="">SELECT</option>
+          <option>Full Stack Development</option>
+          <option>Data Science</option>
+          <option>Cloud Computing</option>
+          <option>Cyber Security</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="dept">Department</label>
+        <select id="dept" name="dept" required>
+          <option value="">SELECT</option>
+          <option>CSE</option>
+          <option>IT</option>
+          <option>ENTC</option>
+          <option>Mechanical</option>
+          <option>Civil</option>
+        </select>
+      </div>
+      
+
+      <div class="form-buttons">
+        <button type="submit" class="btn submit-btn">Register</button>
+        <button type="cancel" class="btn cancel-btn">Cancel</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
