@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h2 {
+  position: absolute;
+  top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #b51111;
+  text-decoration: underline;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+    gap: 70px;
+}
+
+.card {
+  width: 300px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+.dots span {
+  width: 12px;
+  height: 12px;
+  background: rgb(4, 78, 31);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 3px;
+  animation: bounce 0.6s infinite alternate;
+}
+.dots span:nth-child(2) { animation-delay: 0.2s; }
+.dots span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+
+.bars span {
+  width: 6px;
+  height: 25px;
+  background: rgb(93, 99, 196);
+  display: inline-block;
+  margin: 0 3px;
+  animation: grow 0.6s infinite alternate;
+}
+.bars span:nth-child(2) { animation-delay: 0.2s; }
+.bars span:nth-child(3) { animation-delay: 0.4s; }
+.bars span:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes grow {
+  from { transform: scaleY(0.5); }
+  to { transform: scaleY(1.2); }
+}
+
+
+.pulse {
+  width: 55px;
+  height: 55px;
+  background: rgb(162, 18, 143);
+  border-radius: 50%;
+  animation: pulseAnim 1.5s infinite;
+}
+@keyframes pulseAnim {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+.moving-dots span {
+  width: 12px;
+  height: 12px;
+  background: rgb(20, 128, 187);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 4px;
+  animation: move 0.8s infinite alternate;
+}
+.moving-dots span:nth-child(2) { animation-delay: 0.2s; }
+.moving-dots span:nth-child(3) { animation-delay: 0.4s; }
+.moving-dots span:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes move {
+  from { transform: translateY(0); opacity: 0.5; }
+  to { transform: translateY(-12px); opacity: 1; }
+}

@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+min-height: 100vh;
+background: white  ;
+}
+.square, .circle, .rectangle, .triangle, .diamond {
+width: 60px;
+height: 60px;
+}
+.square {
+background: red;
+animation: rotate  3s linear infinite;
+}
+.circle {
+background: orange;
+border-radius: 50%;
+animation: shake  infinite 1.5s;
+}
+
+.rectangle {
+width: 90px;
+height: 50px;
+background: green;
+animation: rotate-rev  infinite 4s;
+}
+
+.triangle {
+width: 0;
+height: 0;
+border-left: 30px solid transparent;
+border-right: 30px solid transparent;
+border-bottom: 60px solid blue;
+animation: wobble  infinite 0.4s ;
+}
+.diamond {
+background: purple;
+transform: rotate(45deg);
+animation: bounce  infinite 1s;
+}
+@keyframes rotate {
+0% {
+     transform: rotate(0deg); 
+    }
+100% {
+     transform: rotate(360deg);
+ }
+}
+@keyframes shake {
+0%, 100% {
+     transform: translateX(0);
+     }
+25% {
+     transform: translateX(-5px);
+     }
+75% {
+     transform: translateX(5px);
+     }
+}
+@keyframes rotate-rev {
+0% { 
+    transform: rotate(0deg); 
+}
+100% { 
+    transform: rotate(-360deg);
+ }
+}
+
+@keyframes wobble {
+0%, 100% {
+     transform: rotate(0deg); 
+    }
+50% { 
+    transform: rotate(10deg);
+ }
+}
+@keyframes bounce {
+0%, 100% { 
+    transform: translateY(0);
+ }
+50% { 
+    transform: translateY(-10px);
+ }
+}
+
+

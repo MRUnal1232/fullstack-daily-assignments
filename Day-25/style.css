@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body {
+      margin: 0;
+      padding: 0;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    height: 100vh;
+}
+.left {
+    width: 30%;
+    background-color: #2C2C2C;
+}
+.left label{
+    color:rgb(142, 136, 136);
+    font-size: 18px;
+}
+.left img{
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 53px;
+}
+.left h2{
+    color:rgb(204, 195, 195);
+    font-weight: 200;
+    text-align: center;
+}
+.left p{
+    color:rgb(142, 136, 136);
+    font-weight: 150;
+    text-align: center;
+}
+.left .upgrade-btn{
+    width: 80%;
+    background: none;
+    font-size: 18px;
+    border:2px solid #184069;
+    color:#184069;
+    border-radius:20px;
+    padding:7px 15px;
+    margin-left:10%;
+    margin-top:20px
+}
+.menu {
+    margin: 20px 0;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  color: #bbb;
+  margin-left: 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+
+.menu .ri-gps-line a i {
+  font-size: 16px;
+  color: #ff5c33;
+}
+
+.menu a.active {
+  background: #2a2a2a;
+  color: #ff6a00;
+}
+.menu a:hover {
+  background: #2a2a2a;
+  color: #ff6a00;
+}
+.left .status{
+    margin-top:33%;
+    color:rgb(142, 136, 136);
+}
+.left .status i{
+    margin-left: 100px;
+}
+.right {
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right .boxes {
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 20px;
+  gap: 20px; 
+}
+.right  .paragraph{
+  background-color: #3b2520; 
+  width: 90%; 
+  color: white;
+  padding: 20px;
+  margin-top: 60px;
+  border-radius: 10px;
+  text-align: left;  
+  word-spacing: 1.5px;   
+  letter-spacing: 1px;    
+  font-family: Arial, sans-serif;
+}
+.right  P:hover{
+    background-color: #5C3A35;
+    cursor: pointer;
+}
+.right  .boxes .box1{
+    width: 30px;
+    height: 400px;
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    
+}
+.right .boxes  .box1 .heading1{
+    color:whitesmoke;
+    margin-top: 60px;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 300;
+}
+.right .boxes .box1 .heading2{
+    color:rgb(142, 136, 136);
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 200;
+}
+.right  .boxes .box1 .heading3{
+    color:whitesmoke;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 300;
+
+}
+.right .boxes .box1 .heading4{
+    color:rgb(142, 136, 136);
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 200;
+}
+.right  .boxes .box1 .heading5{
+    color:whitesmoke;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 21px;
+    font-weight: 300;
+
+}
+.right  .boxes .box1 .heading5 i{
+    margin-left: 10px;
+}
+.right  .boxes .box1 h3{
+    color:rgb(142, 136, 136);
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 200;
+}
+.right  .boxes .box1 a{
+    color: #67b8ff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.vertical hr {
+  border-top: 400px solid rgb(142, 136, 136) ;
+  margin: 20px;
+}
+.right .boxes .box2{
+    width: 50%;
+    height: 400px;
+    flex-wrap: wrap;
+    flex: 1;
+    display: flex;
+    margin-left: 20px;
+    justify-content:space-between ;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.right .boxes .box2 h3{
+    color:whitesmoke;
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: 300;
+}
+.right .boxes .box2 label{
+    color:rgb(142, 136, 136);
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 200;
+}
+.right .boxes .box2 input[type="text"] {
+  width: 70%;
+  padding: 13px;
+  border: 1px solid rgb(113, 111, 111);
+  border-radius: 5px;
+  background: black;
+  color: whitesmoke;
+}
+.right .boxes .box2 input[type="text"]:focus{
+    border-color:   #5C3A35;
+    outline: none;
+}
+.right .boxes .box2 label1{
+    color:rgb(142, 136, 136);
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 200;
+}
+.right .boxes .box2 .radio-group label{
+    accent-color: #5C3A35;
+    gap:15px;
+}
+.right .boxes .box2 .connect-btn{
+  background:black;
+  border: 1px solid #5C3A35;
+  color: #5C3A35;
+  width: 40%;
+  align-items: center;
+  margin-top: 20px;
+  margin-left:60px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
