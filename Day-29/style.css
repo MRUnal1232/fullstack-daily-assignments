@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header h2 {
+  color: green;
+}
+
+.header .links {
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+}
+
+.header .links a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.header .links a:hover {
+  color: green;
+}
+
+.header .links button {
+  padding: 8px 25px;
+  background: black;
+  color: white;
+  font-weight: 550;
+  border: 2px solid black;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.header i {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  padding: 40px 5%;
+  background: whitesmoke;
+}
+
+.container .title {
+  font-size: 3em;
+  color: rgb(3, 90, 3);
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.flip-card {
+  background: transparent;
+  width: 300px;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.flip-front {
+  background: turquoise;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.flip-front img {
+  width: 80%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.flip-back {
+  background: rgb(3, 90, 3);
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+}
+
+.flip-back img {
+  width: 70%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.flip-back p {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.container1 {
+  width: 100%;
+  height: 70vh;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.container1 .cord {
+  width: 100%;
+  background: turquoise;
+  padding: 90px 10%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+}
+
+.container1 .cord .text img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(44, 44, 44, 0.2);
+}
+
+.container1 .cord .text p {
+  color: rgb(60, 60, 60);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .container .title {
+    font-size: 2em;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .flip-card {
+    width: 90%;
+    height: 320px;
+  }
+
+  .container1 {
+    height: auto;
+    padding: 20px;
+  }
+
+  .container1 .cord {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container1 .cord .text img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container1 .cord .text p {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  .header .links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .header .links.active {
+    display: flex;
+  }
+
+  .header i {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 50%;
+    color: green;
+  }
+
+  .header i:hover {
+    background: rgba(54, 235, 66, 0.425);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flip-back {
+    background: rgb(209, 85, 199);
+  }
+
+  .flip-back p {
+    font-size: 13px;
+    color: antiquewhite;
+  }
+
+  .container1 {
+    padding: 15px;
+  }
+
+  .container1 .cord {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .container1 .cord .text p {
+    font-size: 0.95rem;
+    color: antiquewhite;
+    margin-bottom: 3%;
+  }
+}
