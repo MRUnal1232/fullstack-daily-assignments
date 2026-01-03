@@ -1,0 +1,80 @@
+HTML & CSS Assignment – Timetable Navigation and College Timetable
+
+This assignment consists of two HTML files:
+1. A navigation page with links to different timetable pages
+2. A detailed College Timetable page created using HTML tables and CSS
+
+================================
+FILE 1: TIMETABLE NAVIGATION PAGE
+================================
+
+1. <!DOCTYPE html>
+   - Defines the document as HTML5.
+
+2. <head> section:
+   - Includes meta charset UTF-8 for character encoding.
+   - Includes viewport meta tag for responsive design.
+   - Sets the page title.
+   - Uses <link rel="icon"> to add a favicon image (logo.png).
+   - Contains internal CSS inside the <style> tag.
+
+3. CSS Styling:
+   - body:
+     - display: flex; places links side by side.
+   - a (anchor tag):
+     - Removes underline using text-decoration: none.
+     - Adds padding, margin, border, background color, and border-radius.
+     - Sets font size and text color for better visibility.
+
+4. Body Content:
+   - Two anchor (<a>) tags are used as buttons.
+   - Links open in a new tab using target="_blank".
+   - Links redirect to:
+     - schoolTimetable.html
+     - CollegeTimetable.html
+
+================================
+FILE 2: COLLEGE TIMETABLE PAGE
+================================
+
+1. Page Structure:
+   - Uses proper HTML5 structure with head and body sections.
+   - Displays a heading using <h1>.
+
+2. CSS Reset:
+   - Universal selector (*) removes default margin and padding.
+   - box-sizing: border-box ensures consistent element sizing.
+
+3. Body Styling:
+   - display: flex and flex-direction: column align items vertically.
+   - Items are centered using align-items: center.
+
+4. Heading (h1):
+   - Full-width centered heading.
+   - Styled with background color, border, padding, and rounded corners.
+
+5. Table Structure:
+   - <table> element used to display timetable.
+   - <thead> contains day headings.
+   - <tbody> contains time slots and subjects.
+
+6. Table Styling:
+   - border-collapse: collapse merges table borders.
+   - th and td have borders, padding, and centered text.
+   - th elements have dark background with white text.
+
+7. Special Rows:
+   - Lunch Break row uses colspan="5" to span across all days.
+   - Short Break row is styled separately using CSS classes.
+   - Break rows have highlighted background and bold text.
+
+================================
+CONCLUSION
+================================
+
+This assignment demonstrates:
+- Use of internal CSS
+- Flexbox layout
+- Anchor tags as navigation buttons
+- HTML tables with rows, columns, and colspan
+- Timetable layout design using HTML and CSS

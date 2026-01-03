@@ -1,0 +1,45 @@
+body {
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 380px;
+  background: white;
+  border: 2px solid #e67e22;
+  border-radius: 10px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.header {
+  background: #e67e22;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.header h2 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+.card-body {
+  display: flex;
+  align-items: right;
+  padding: 10px;
+}
+
+.photo img {
+  width: 90px;
+  height: 110px;
+  border: 2px solid #e67e22;
+}
+
+.card {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.card p {
+  margin: 4px 0;
+}

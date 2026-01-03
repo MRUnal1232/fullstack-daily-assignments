@@ -1,0 +1,38 @@
+body {
+  background:linear-gradient(135deg,#ff7e5f,#feb47b,#6a11cb,#2575fc);
+  height: 100vh;
+  margin:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.box {
+  background: white;
+  width: 200px;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#time {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ff7e5f;
+  
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size:18px;
+}

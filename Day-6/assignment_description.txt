@@ -1,0 +1,75 @@
+HTML & CSS Assignment – Images with Different Shapes
+
+This assignment demonstrates how images can be displayed
+in different shapes using HTML and CSS only.
+
+================================
+HTML FILE EXPLANATION
+================================
+
+1. <!doctype html>
+   - Declares the document type as HTML5.
+
+2. <html lang="en">
+   - Specifies English as the document language.
+
+3. <head> section:
+   - <meta charset="utf-8"> supports all characters.
+   - <meta name="viewport"> ensures responsive design.
+   - <title> defines the page title shown in the browser tab.
+   - <link rel="stylesheet"> connects the external CSS file (styles.css).
+
+4. <body> section:
+   - Contains a main heading describing the assignment.
+   - Uses a container div to hold all images.
+
+================================
+IMAGE GRID STRUCTURE
+================================
+
+1. A div with class "grid" is used to arrange images.
+2. Each image is wrapped inside a <figure> tag.
+3. <div class="card"> is used to apply shape styling.
+4. <img> tag loads images from an online source.
+5. <figcaption> describes each image shape.
+
+================================
+IMAGE SHAPES USED
+================================
+
+1. Circle:
+   - Created using border-radius: 50%.
+   - Image appears in a perfect circular shape.
+
+2. Rounded Rectangle:
+   - Created using border-radius with rounded corners.
+   - Gives a smooth rectangle appearance.
+
+3. Hexagon:
+   - Created using CSS clip-path property.
+   - Image is clipped into a hexagonal shape.
+
+4. Star:
+   - Created using CSS clip-path property.
+   - Image is clipped into a star shape.
+
+================================
+CSS CONCEPTS USED
+================================
+
+1. External CSS file for styling.
+2. Grid or flex layout for image arrangement.
+3. border-radius for circular and rounded shapes.
+4. clip-path for complex shapes like hexagon and star.
+5. Responsive images using fixed container size.
+
+================================
+CONCLUSION
+================================
+
+This assignment demonstrates:
+- HTML image handling
+- External CSS usage
+- CSS shapes using border-radius and clip-path
+- Clean layout using grid/flex
+- Modern CSS styling techniques

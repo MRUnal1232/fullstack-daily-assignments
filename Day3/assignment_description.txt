@@ -1,0 +1,61 @@
+HTML & CSS Assignment – Styled Navigation Links
+
+This assignment contains two HTML files:
+1. A main page with styled navigation and social media links
+2. A homepage file linked from the main page
+
+-----------------------------
+MAIN PAGE EXPLANATION
+-----------------------------
+
+1. <!DOCTYPE html>
+   - Declares the document as HTML5.
+
+2. <html lang="en">
+   - Sets the document language to English.
+
+3. <head> section:
+   - <meta charset="UTF-8"> ensures proper character encoding.
+   - <meta name="viewport"> makes the page responsive.
+   - <title>Document</title> sets the browser tab title.
+   - <style> tag is used to write internal CSS.
+
+4. CSS Styling:
+   - body:
+     - text-align: center; centers all content.
+     - margin-top: 200px; moves content down the page.
+
+   - a (anchor tag default style):
+     - Removes underline using text-decoration: none.
+     - Adds border, padding, font size, background color,
+       rounded corners, and margin.
+
+   - Social media classes:
+     - .linkedin → blue background with white text
+     - .instagram → radial gradient background
+     - .facebook → Facebook blue color
+     - .twitter → Twitter blue color
+
+5. Anchor (<a>) tags:
+   - Used as navigation buttons.
+   - Some links open external websites using target="_blank".
+   - Homepage link opens a local HTML file (homepage.html).
+
+-----------------------------
+HOMEPAGE FILE EXPLANATION
+-----------------------------
+
+1. Basic HTML structure with head and body sections.
+2. Contains an <h1> element displaying:
+   "this is home page"
+
+-----------------------------
+CONCLUSION
+-----------------------------
+
+This assignment demonstrates:
+- Internal CSS usage
+- Styling anchor tags as buttons
+- CSS classes
+- Page navigation using links
+- External and internal linking in HTML

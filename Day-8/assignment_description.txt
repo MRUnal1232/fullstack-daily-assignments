@@ -1,0 +1,81 @@
+HTML & CSS Assignment – Basic Page Layout
+
+This assignment demonstrates how to create
+a simple page layout using HTML and CSS.
+The page is divided into top, middle, and bottom sections
+with different shapes and alignments.
+
+================================
+HTML FILE EXPLANATION
+================================
+
+1. <!DOCTYPE html>
+   - Declares the document as HTML5.
+
+2. <html lang="en">
+   - Sets the language of the document to English.
+
+3. <head> section:
+   - Includes meta charset UTF-8.
+   - Includes viewport meta tag for responsive design.
+   - Sets the page title as "Layout".
+   - Links the external CSS file (style.css).
+   - Adds a favicon image (logo.png).
+
+4. <body> section:
+   - Contains three main containers:
+     - .top section
+     - .middle section
+     - .bottom section
+
+================================
+TOP SECTION (HEADER AREA)
+================================
+
+1. Uses a div with class "top".
+2. Contains three box elements using class "box".
+3. Boxes are aligned to the right using text-align.
+4. Styling includes:
+   - Orange background
+   - Dashed borders
+   - Rectangular shape
+
+================================
+MIDDLE SECTION (CONTENT AREA)
+================================
+
+1. Uses a div with class "middle".
+2. Contains three circular elements.
+3. Circles are created using border-radius: 50%.
+4. Elements are center aligned.
+5. Blue background is applied to circles.
+
+================================
+BOTTOM SECTION (FOOTER AREA)
+================================
+
+1. Uses a div with class "bottom".
+2. Uses flexbox with column direction.
+3. Vertical boxes are aligned from the left.
+4. Dark green background is used for the section.
+
+================================
+CSS CONCEPTS USED
+================================
+
+1. External CSS file usage.
+2. Inline-block elements for box layouts.
+3. Flexbox for vertical alignment.
+4. border-radius for circular shapes.
+5. Background colors and dashed borders.
+
+================================
+CONCLUSION
+================================
+
+This assignment demonstrates:
+- Basic layout creation using HTML divs
+- External CSS styling
+- Section-wise page structure
+- Shape creation using CSS
+- Alignment and spacing control

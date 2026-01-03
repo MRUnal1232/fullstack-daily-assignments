@@ -1,0 +1,88 @@
+HTML & CSS Assignment – Rowspan and Colspan Tables
+
+This assignment demonstrates the use of HTML tables with
+rowspan and colspan attributes along with external CSS styling.
+
+================================
+FILE 1: HTML FILE (index.html)
+================================
+
+1. <!DOCTYPE html>
+   - Declares the document as HTML5.
+
+2. <head> section:
+   - <meta charset="UTF-8"> ensures proper character encoding.
+   - <meta name="viewport"> enables responsive layout.
+   - <title>ROWSPAN & COLSPAN</title> sets the page title.
+   - <link rel="stylesheet"> connects the external CSS file (style.css).
+   - <link rel="icon"> is used to add a favicon (logo.png).
+
+================================
+TABLE 1: A TO Z ALPHABETS
+================================
+
+1. This table displays English alphabets from A to Z.
+2. <h1> heading is used to title the table.
+3. <tr> elements represent table rows.
+4. <td> elements represent table cells.
+5. colspan attribute:
+   - Used to merge multiple columns into a single cell.
+   - Example: Zz uses colspan="10" to span the full table width.
+6. Each row has a separate CSS class:
+   - firstRow
+   - secondRow
+   - thirdRow
+   - forthRow
+   - fifthRow
+   - SixthRow
+7. Different background colors are applied to each row for clarity.
+
+================================
+TABLE 2: STUDENT DETAILS
+================================
+
+1. This table displays student information.
+2. Table headers (<th>) include:
+   - Name
+   - Class
+   - School
+3. rowspan attribute:
+   - Used to merge rows for repeated data.
+   - Example: First name and last name span two rows.
+4. colspan attribute:
+   - Used in the header row to merge name columns.
+5. This table clearly demonstrates the combined usage of rowspan and colspan.
+
+================================
+FILE 2: CSS FILE (style.css)
+================================
+
+1. body styling:
+   - Uses flexbox to align content vertically.
+   - Centers all tables and headings.
+   - Applies background color and font size.
+
+2. table styling:
+   - border-collapse: collapse merges borders.
+   - width: 70% ensures proper table size.
+   - margin-bottom adds spacing between tables.
+
+3. td and th styling:
+   - Borders added for clear structure.
+   - Padding improves readability.
+   - Font size and bold text highlight content.
+
+4. Row class styling:
+   - Different background colors for each row.
+   - Text is center-aligned.
+
+================================
+CONCLUSION
+================================
+
+This assignment demonstrates:
+- Use of external CSS
+- HTML table structure
+- Rowspan and colspan attributes
+- Table styling and layout control
+- Proper organization of data using tables

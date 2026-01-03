@@ -1,0 +1,114 @@
+HTML & CSS Assignment – LeadSoft Placement Academy Website
+
+This project is a complete static website layout created using
+HTML and external CSS. It represents a professional training
+and placement academy website.
+
+================================
+HTML FILE EXPLANATION
+================================
+
+1. <!DOCTYPE html>
+   - Declares the document type as HTML5.
+
+2. <html lang="en">
+   - Specifies English as the page language.
+
+3. <head> section:
+   - <meta charset="UTF-8"> enables proper character support.
+   - <meta name="viewport"> ensures responsive design.
+   - <title>LeadSoft Placement Academy</title> sets page title.
+   - <link rel="stylesheet"> connects external CSS (style.css).
+   - <link rel="icon"> adds website favicon (logo.png).
+
+================================
+HEADER & NAVIGATION BAR
+================================
+
+1. <header> contains the website navigation.
+2. .navbar uses Flexbox to align items horizontally.
+3. Website logo is displayed using a div.
+4. Navigation menu uses:
+   - unordered list (<ul>)
+   - list items (<li>)
+   - anchor tags (<a>)
+5. Login button styled with hover effects.
+
+================================
+HERO SECTION
+================================
+
+1. <section class="hero"> contains introductory content.
+2. Divided into two parts:
+   - Text section (heading, subheading, description)
+   - Image section (hero image)
+3. Flexbox is used for horizontal alignment.
+4. Proper spacing and typography are applied.
+
+================================
+ABOUT US SECTION
+================================
+
+1. Uses .About-Us container for company details.
+2. Contains three cards:
+   - Expert Trainers
+   - Placement Support
+   - Modern Courses
+3. Each card includes:
+   - Image
+   - Heading
+   - Description
+4. Hover effect adds animation and box-shadow.
+
+================================
+CONTENT / INFORMATION SECTIONS
+================================
+
+1. Uses .content container with Flexbox layout.
+2. Alternating text and background image sections.
+3. Background images are added using CSS.
+4. Content explains academy vision and opportunities.
+
+================================
+FOOTER SECTION
+================================
+
+1. Footer divided into three boxes:
+   - Academy information
+   - Quick links
+   - Social media links
+2. Uses Flexbox for layout.
+3. Hover effects applied to links.
+4. Dark theme background used for contrast.
+
+================================
+COPYRIGHT SECTION
+================================
+
+1. Displays copyright notice.
+2. Center-aligned text.
+3. Dark background with light text.
+
+================================
+CSS CONCEPTS USED
+================================
+
+1. External CSS file
+2. Flexbox layout
+3. Hover effects and transitions
+4. Box shadows and border radius
+5. Responsive widths and spacing
+6. Background images using CSS
+7. Card-based layout design
+
+================================
+CONCLUSION
+================================
+
+This project demonstrates:
+- Complete webpage layout using HTML & CSS
+- Professional navigation bar
+- Hero and content sections
+- Card-based design
+- Footer implementation
+- Clean UI using modern CSS techniques

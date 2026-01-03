@@ -1,0 +1,31 @@
+HTML & CSS Assignment – Button Styling Description
+
+This HTML file demonstrates the use of inline CSS styles applied to button elements.
+
+1. <!DOCTYPE html>
+   - Declares the document as HTML5.
+
+2. <html lang="en">
+   - Sets the language of the webpage to English.
+
+3. <head> section:
+   - <meta charset="UTF-8"> allows the use of all characters.
+   - <meta name="viewport"> ensures responsive design on all devices.
+   - <title>Document</title> sets the page title.
+   - <link rel="icon"> is used to add a favicon image (logo.png).
+
+4. <body> section:
+   - Contains multiple <button> elements.
+   - Each button uses the style attribute to demonstrate different CSS properties.
+
+5. CSS Properties Used:
+   - padding: Adds space inside the button.
+   - margin: Adds space outside the button.
+   - background-color: Changes the background color of the button.
+   - font-size: Changes the size of the button text.
+   - color: Changes the text color of the button.
+   - margin-top, margin-bottom, margin-left, margin-right:
+     Controls spacing on individual sides of the button.
+
+This assignment demonstrates basic inline CSS styling
+and helps understand spacing, colors, and typography in HTML buttons.

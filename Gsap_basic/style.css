@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.reveal-text {
+  font-size: 8rem;
+  font-weight: bold;
+  display: flex;
+}
+
+.letter {
+  overflow: hidden; /* This hides the letter when it moves down */
+  display: flex;
+  align-items: center;
+}
+
+.card-grid{
+  width: 100%;
+  padding: 20px 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5em;
+  background: white;
+  margin-top: 50px;
+}
+.card img{
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  gap:2px;
+}
+.loader-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+}
+
+.box, .box1 {
+  width: 100px;
+  height: 100px;
+  background: red; 
+}
+
+.page1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

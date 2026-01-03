@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ID Card</title>
+<style>
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background:#ddd;
+  font-family:Arial;
+}
+.card{
+  width:350px;
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  border:2px solid #cfa34a;
+}
+.card h3{
+  text-align:center;
+}
+card h2 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="header">
+        <h2> Shree Siddheshwar Women's College of Engineering , Solapur</h2>
+     </div>
+  <div class="card"> 
+    <p><b>Name:</b> <span id="name"></span></p>
+    <p><b>DOB:</b> <span id="dob"></span></p>
+    <p><b>Blood Group:</b> <span id="blood"></span></p>
+    <p><b>Mobile:</b> <span id="mobile"></span></p>
+    <p><b>Aadhar:</b> <span id="adhar"></span></p>
+    <p><b>Address:</b> <span id="address"></span></p>
+  </div>  
+</div>
+ <div class="card-body">
+    <div class="photo">
+      <img src="profile.jpg" alt="Student Photo">
+    </div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const data = JSON.parse(decodeURIComponent(params.get("data")));
+
+for (let key in data) {
+  document.getElementById(key).innerText = data[key];
+}
+</script>
+
+</body>
+</html>

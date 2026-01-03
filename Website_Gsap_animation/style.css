@@ -1,0 +1,113 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:#021b2d;
+  color:white;
+}
+
+.header{
+  height:60px;
+  background:#d6e4ec;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 5%;
+}
+
+.header h2{
+  background:linear-gradient(120deg,#173d75,#03010a);
+  color:transparent;
+  background-clip:text;
+}
+
+.links{
+  display:flex;
+  gap:2rem;
+  align-items:center;
+}
+
+.links a{
+  color:rgb(9, 1, 1);
+  text-decoration:none;
+}
+
+.links a:hover{ 
+  color:#033f63;
+}
+
+.links button{
+  padding:8px 18px;
+  background:#00ff9c;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.hero-section{
+  padding:40px 5%;
+  display:flex;
+  gap:2rem;
+  align-items:center;
+}
+
+.bg-image img{
+  width:420px;
+  border-radius:10px;
+}
+
+.information{
+  width:50%;
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+}
+
+.information h1{
+  background:#cfefff;
+  color:transparent;
+  background-clip:text;
+}
+
+.information p{
+  color:#cfefff;
+  line-height:26px;
+}
+
+.information button{
+  width:160px;
+  padding:10px;
+  background:#033f63;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.container{
+  padding:40px 5%;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2rem;
+}
+
+.card{
+  background:#033f63;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+.card img{
+  width:100%;
+  border-radius:8px;
+}
+
+.card p{
+  margin-top:12px;
+  text-align:center;
+  color:#d4f1ff;
+}

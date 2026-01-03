@@ -1,0 +1,26 @@
+HTML Assignment – Code Description
+
+This HTML file demonstrates the basic structure of an HTML document.
+
+1. <!DOCTYPE html>
+   - Defines the document type as HTML5.
+
+2. <html lang="en">
+   - Specifies the language of the document as English.
+
+3. <head> section:
+   - Contains meta information such as character encoding (UTF-8)
+   - Includes viewport settings for responsive design
+   - Sets the page title
+
+4. <body> section:
+   - Includes headings from <h1> to <h6> to show different heading sizes.
+   - Contains a <p> paragraph tag styled using the style attribute.
+
+5. Inline CSS Styling in <p> tag:
+   - font-size: 2em → Makes the text larger
+   - background-color: black → Sets background color
+   - color: aliceblue → Changes text color
+
+This assignment demonstrates the use of headings, paragraph tags,
+and inline CSS styling in HTML.

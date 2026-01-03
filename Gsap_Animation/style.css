@@ -1,0 +1,39 @@
+body {
+  margin-top: 30px;
+  height: 100%  ;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  background: #080505;
+}
+
+.box {
+  width: 100px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color:balck ;
+}
+.b1 {  
+   background: rgb(244, 217, 168);
+   
+}
+
+.b2 {
+    background: #c6e6f3;
+ }
+
+.b3 {
+     background: #b27f6a;
+     }
+
+.b4 {
+     background: #cea0e0; 
+    }
+
+.b5 {
+     background: #baeace;
+     }

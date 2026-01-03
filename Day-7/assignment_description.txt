@@ -1,0 +1,77 @@
+HTML & CSS Assignment – Display Flex with Image Shapes
+
+This assignment demonstrates the use of CSS Flexbox
+and different border-radius styles to display images
+in unique shapes.
+
+================================
+HTML FILE EXPLANATION
+================================
+
+1. <!DOCTYPE html>
+   - Declares the document as HTML5.
+
+2. <html lang="en">
+   - Sets the document language to English.
+
+3. <head> section:
+   - <meta charset="UTF-8"> ensures proper character encoding.
+   - <meta name="viewport"> makes the layout responsive.
+   - <title>Display-Flex</title> sets the browser title.
+   - <link rel="icon"> adds a favicon image (img1.jpg).
+   - <link rel="stylesheet"> links the external CSS file (style.css).
+
+4. <body> section:
+   - Contains a header section with the title "Anime Characters".
+   - Contains a container div that holds all image elements.
+   - All images are loaded using external image URLs.
+   - Each image has a specific class to apply different styles.
+
+================================
+CSS FILE (style.css) EXPLANATION
+================================
+
+1. Body Styling:
+   - display: grid; centers the content vertically and horizontally.
+   - place-content: center; aligns content in the center.
+   - min-height: 100vh; fills full screen height.
+   - background-color gives a colored background to the page.
+
+2. Container Styling:
+   - display: flex; aligns images in a row.
+   - justify-content: center; centers images horizontally.
+   - align-items: center; aligns images vertically.
+   - gap adds spacing between images.
+   - padding, border-radius, and box-shadow improve appearance.
+
+================================
+IMAGE SHAPE STYLING
+================================
+
+1. Circle Image (.circle):
+   - border-radius: 50% creates a circular shape.
+   - object-fit: cover keeps the image proportions.
+
+2. Rounded Image (.rounded):
+   - border-radius: 10% 50% creates a rounded rectangle shape.
+   - box-shadow adds depth.
+
+3. Pill Image (.pill):
+   - border-radius: 30% gives a soft pill-style shape.
+   - object-fit: fill fills the container area.
+
+4. Polaroid Image (.polaroid):
+   - Custom border-radius gives a unique look.
+   - box-shadow creates a polaroid-style effect.
+
+================================
+CONCLUSION
+================================
+
+This assignment demonstrates:
+- Use of external CSS
+- Flexbox layout (display: flex)
+- Grid centering technique
+- Image styling using border-radius
+- Box-shadow for visual effects
+- Responsive and clean layout design

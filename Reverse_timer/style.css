@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(210deg, #eee, #ddd);
+    display: grid;
+    place-content: center;
+}
+
+
+.container{
+    width: 350px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2em;
+}
+
+
+.container h1{
+    font-size: 44px;
+    color: red;
+}
+
+
+.container .input-field{
+    width: 100%;
+}
+
+.container .input-field label{
+    font-size: 13px;
+    font-weight: 510;
+}
+
+
+.container .input-field input{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 510;
+}
+
+
+.container .action-field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+
+.container .action-field button{
+    padding: 8px 20px;
+    font-weight: 530;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition: all ease-in 0.2s;
+}
+
+
+.container .action-field button:active{
+    scale: 0.6;
+}
+
+
+.container .action-field button:nth-child(1){
+    background: linear-gradient(210deg, green, darkgreen);
+    color: white;
+    border: none;
+}
+
+
+.container .action-field button:nth-child(2){
+    background: linear-gradient(210deg, red, brown);
+    color: white;
+    border: none;
+}
+
+
+.container p{
+    font-size: 14px;
+    margin: 20px 0;
+    font-weight: 510;
+}

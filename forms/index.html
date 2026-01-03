@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS FORM</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <h2>Login Basic form</h2>
+        <div class="input-field">
+            <label>Username</label>=
+            <input type="text" id="user1" />
+        </div>
+        <div class="input-field">
+            <label>Password</label>
+            <input type="text" id="pwd1" />
+        </div>
+        <button onclick="onFormSubmit()" >login</button>
+    </div>
+
+    <form id="form1">
+        <h2>Login with formID</h2>
+        <div class="input-field">
+            <label>Username</label>
+            <input type="text" id="user">
+        </div>
+        <div class="input-field">
+            <label>Password</label>
+            <input type="text" id="pass">
+        </div>
+        <button >login</button>
+    </form>
+
+    <form id="form2">
+        <h2>Login with FormData</h2>
+        <div class="input-field">
+            <label>Username</label>
+            <input type="text" id="username">
+        </div>
+        <div class="input-field">
+            <label>Password</label>
+            <input type="text" id="password">
+        </div>
+        <button >login</button>
+    </form>
+</body>
+</html>
