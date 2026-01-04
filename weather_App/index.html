@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Forecast App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="title">
+      <h2>Weather Forecast App</h2>
+    </div>
+
+    <div class="weather">
+
+      <div class="input-field">
+        <input id="city" type="text" placeholder="Enter city name" />
+        <button id="btn-action">Search</button>
+      </div>
+
+      <div class="information">
+        <div class="field">
+          <label>Description</label>
+          <p id="desc">Empty</p>
+        </div>
+
+        <div class="field">
+          <label>Temperature</label>
+          <p id="temp">0 °C</p>
+        </div>
+      </div>
+
+      <div class="information">
+        <div class="field">
+          <label>Humidity</label>
+          <p id="humidity">0</p>
+        </div>
+
+        <div class="field">
+          <label>Pressure</label>
+          <p id="pressure">0</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
