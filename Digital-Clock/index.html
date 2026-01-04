@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Clock App</title>
+    <title>Neon Cyber Clock</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="timer">
-            <h1 id="timerText">00:00:00</h1>
-            <p id="statusText">PM</p>
+    <div class="scanlines"></div> <div class="container">
+        <div class="clock-content">
+            <div class="timer">
+                <h1 id="timerText">00:00:00</h1>
+                <span id="statusText">AM</span>
+            </div>
+            
+            <div class="info-row">
+                <h2 id="dateText">LOADING DATE...</h2>
+            </div>
+            
+            <div class="sys-msg">STATUS: <span id="msgText">ONLINE</span></div>
+
+            <div class="progress-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
         </div>
-        <h2 id="dateText">12/12/2012</h2>
     </div>
 </body>
 </html>

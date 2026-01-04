@@ -1,61 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(120deg, #420303, #dd0404);
+    background-color: #050505;
+    background-image: 
+        linear-gradient(rgba(0, 255, 100, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 100, 0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
     display: grid;
     place-content: center;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
 }
 
-.container{
-    width: 350;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+.scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0),
+        rgba(255,255,255,0) 50%,
+        rgba(0,0,0,0.2) 50%,
+        rgba(0,0,0,0.2)
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.container {
+    position: relative;
+    padding: 3px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #00f260, #0575e6);
+    box-shadow: 0 0 30px rgba(0, 242, 96, 0.2);
+    animation: borderPulse 4s infinite alternate;
+}
+
+.clock-content {
+    background: rgba(10, 10, 10, 0.95);
+    padding: 50px 70px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2em;
+    gap: 1.2em;
+    position: relative;
+    z-index: 2;
+    border: 1px solid #333;
 }
 
-.container .timer{
-    width: 100%;
+.timer {
     display: flex;
-    align-items: end;
-    justify-content: center;
-    gap: 8px;
+    align-items: baseline;
+    gap: 15px;
 }
 
-.container .timer h1{
-    font-size: 55px;
-    font-family: Inconsolata;
-    background: linear-gradient(210deg, red, brown);
-    color: transparent;
-    background-clip: text;
+.timer h1 {
+    font-size: 70px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(0, 242, 96, 0.6);
+    letter-spacing: 5px;
 }
 
-.container .timer p{
-    font-size: 18px;
-    font-family: Inconsolata;
-    font-weight: 510;
-    background: linear-gradient(210deg, green, darkgreen);
-    color: transparent;
-    background-clip: text;
+.timer #statusText {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0575e6;
+    text-shadow: 0 0 10px #0575e6;
 }
-.container h2{
-    font-family: 'Rubik';
-    font-weight: 500;
-    background: linear-gradient(210deg, red, brown);
-    color: transparent;
-    background-clip: text;
+
+h2 {
+    font-size: 16px;
+    color: #888;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.sys-msg {
+    font-size: 12px;
+    color: #0575e6;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+#msgText {
+    color: #fff;
+    animation: blink 2s infinite;
+}
+
+.progress-container {
+    width: 100%;
+    height: 6px;
+    background: #1a1a1a;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #00f260;
+    box-shadow: 0 0 15px #00f260;
+    transition: width 1s linear, background 0.5s ease;
+}
+
+@keyframes borderPulse {
+    0% { filter: hue-rotate(0deg); box-shadow: 0 0 20px rgba(0, 242, 96, 0.2); }
+    100% { filter: hue-rotate(40deg); box-shadow: 0 0 40px rgba(5, 117, 230, 0.4); }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+@media (max-width: 500px) {
+    .clock-content { padding: 30px; }
+    .timer h1 { font-size: 40px; }
+    body { background-size: 15px 15px; }
 }
