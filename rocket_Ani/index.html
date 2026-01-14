@@ -3,49 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rocket Animation</title>
+    <title>Next-Gen Orbital Interface</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <img src="img.png" title="rocket icons" class="parallax-icon" id="icon">
-    <section class="hero">
-        <h1>FUTURE TECH</h1>
-        <p>Experience smooth parallax motion built with GSAP & modern UI principles.</p>
-    </section>
-    <section class="card-section">
-        <div class="card-container">
-            <div class="card">
-                <h3>Liquid-Propellant Rockets</h3>
-                <p>Use separate liquid fuel & oxidizer, offering throttling & restart (e.g., SpaceX Falcon 9, Saturn V).</p>
-            </div>
+    <canvas id="starfield"></canvas>
+    <div class="cursor-glow"></div>
 
-            <div class="card">
-                <h3>Solid-Propellant Rockets</h3>
-                <p>Fuel & oxidizer mixed solid; simple, reliable for boosters & fireworks, but can't be stopped easily.</p>
-            </div>
+    <img src="img.png" class="rocket" id="rocket">
 
-            <div class="card">
-                <h3>Monopropellant Rockets</h3>
-                <p>Use a single propellant (like hydrazine) decomposed by a catalyst, common in small spacecraft thrusters. </p>
-            </div>
-            
-            <div class="card">
-                <h3>Electric Propulsion</h3>
-                <p>Ion thrusters & Hall thrusters use electric/magnetic fields for high efficiency over long durations (deep space probes).</p>
-            </div>
+    <main>
+        <section class="hero">
+            <div class="scanner-line"></div>
+            <h1>SYSTEMS <span class="accent">ONLINE</span></h1>
+            <p>Navigating the Future of Propulsion</p>
+        </section>
 
-            <div class="card">
-                <h3>Nuclear Thermal Rockets</h3>
-                <p> Use a nuclear reactor to heat propellant, offering high performance (experimental). </p>
+        <section class="grid-section">
+            <div class="card" data-speed="High">
+                <div class="card-id">01</div>
+                <h3>Ion Thruster</h3>
+                <p>Plasma-based acceleration for deep space transit.</p>
+                <div class="loading-bar"><div class="fill"></div></div>
             </div>
+            <div class="card" data-speed="Max">
+                <div class="card-id">02</div>
+                <h3>Warp Drive</h3>
+                <p>Theoretical folding of space-time metrics.</p>
+                <div class="loading-bar"><div class="fill"></div></div>
+            </div>
+            <div class="card" data-speed="Stable">
+                <div class="card-id">03</div>
+                <h3>Liquid Oxygen</h3>
+                <p>The backbone of modern orbital delivery.</p>
+                <div class="loading-bar"><div class="fill"></div></div>
+            </div>
+        </section>
+    </main>
 
-            <div class="card">
-                <h3>Hybrid Rockets</h3>
-                <p>Solid fuel with liquid oxidizer, balancing simplicity & control.</p>
-            </div>
-    </section>
+    <script src="script.js"></script>
 </body>
 </html>

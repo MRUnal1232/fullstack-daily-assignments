@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #010b23;
+  display: grid;
+  place-content: center;
+}
+
+.container .box {
+  padding: 20px;
+  background: rgba(54, 17, 163, 0.789);
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.container .box button {
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-weight: 550;
+  transition: all ease-in 0.2s;
+  outline: none;
+}
+
+.container .box .inc {
+  background: #A5B4FC;
+  border: 2px solid #A5B4FC;
+  color: darkblue;
+}
+
+.container .box .dec {
+  background: #A5B4FC;
+  border: 2px solid #FBCFE8;
+  color: darkblue;
+}
+
+.container .box h1 {
+  font-weight: 700;
+  color: white;
+  font-style: initial;
+}
