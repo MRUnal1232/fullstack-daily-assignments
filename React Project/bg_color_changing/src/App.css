@@ -1,0 +1,51 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #eee, #ddd);
+}
+.container .box-buttons {
+  padding: 25px 100px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25em;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+}
+.container .box-buttons button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  transition: transform 0.1s;
+}
+
+.container .box-buttons button:active {
+  scale: 0.85;
+}
+.container .box-buttons button:nth-child(1) {
+  background: black;
+  border: 2px solid black;
+}
+
+.container .box-buttons button:nth-child(2) {
+  background: orange;
+  border: 2px solid orange;
+}
+
+.container .box-buttons button:nth-child(3) {
+  background: red;
+  border: 2px solid red;
+}
+
+.container .box-buttons button:nth-child(4) {
+  background: green;
+  border: 2px solid green;
+}

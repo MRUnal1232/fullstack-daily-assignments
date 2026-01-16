@@ -1,6 +1,4 @@
 gsap.registerPlugin(ScrollTrigger);
-
-// 1. STARFIELD LOGIC
 const canvas = document.getElementById('starfield');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
@@ -20,14 +18,12 @@ function animateStars() {
         ctx.beginPath();
         ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
         ctx.fill();
-        s.y += s.speed * (window.scrollY * 0.005 + 1); // Warp speed effect
+        s.y += s.speed * (window.scrollY * 0.005 + 1);
         if (s.y > canvas.height) s.y = 0;
     });
     requestAnimationFrame(animateStars);
 }
 animateStars();
-
-// 2. ROCKET PATHING
 gsap.to("#rocket", {
     scrollTrigger: {
         trigger: "main",
@@ -42,8 +38,6 @@ gsap.to("#rocket", {
     rotation: 90,
     ease: "none"
 });
-
-// 3. CARD ACTIVATION
 const cards = document.querySelectorAll('.card');
 cards.forEach(card => {
     ScrollTrigger.create({
