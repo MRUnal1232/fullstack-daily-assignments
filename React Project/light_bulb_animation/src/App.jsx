@@ -5,15 +5,15 @@ const App = () => {
   const [activeBulb, setActiveBulb] = useState(null);
 
   const bulbs = [
-    { id: 1, color: '#4caf50', top: '2%' }, // Green
-    { id: 2, color: '#021835', top: '3%' }, // White
-    { id: 3, color: '#ff9800', top: '5%' }, // Orange
-    { id: 4, color: '#e91e63', top: '3%' }, // Pink
-    { id: 5, color: '#fdd835', top: '2%' }, // Yellow
+    { id: 1, color: '#4caf50', top: '2%' }, 
+    { id: 2, color: '#021835', top: '3%' }, 
+    { id: 3, color: '#ff9800', top: '5%' }, 
+    { id: 4, color: '#e91e63', top: '3%' }, 
+    { id: 5, color: '#fdd835', top: '2%' }, 
   ];
 
   const handleToggle = (bulb) => {
-    // If clicking the same bulb, turn off. Otherwise, switch to new color.
+    
     setActiveBulb(activeBulb?.id === bulb.id ? null : bulb);
   };
 
