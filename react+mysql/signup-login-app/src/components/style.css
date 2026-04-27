@@ -1,0 +1,49 @@
+body{
+font-family: Arial;
+background:#f5f5f5;
+}
+
+.login-container{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+form{
+background:white;
+padding:30px;
+border-radius:8px;
+width:320px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.input-field{
+margin-bottom:15px;
+}
+
+.input-field label{
+display:block;
+margin-bottom:5px;
+}
+
+.input-field input{
+width:100%;
+padding:8px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#555;
+color:white;
+border:none;
+border-radius:4px;
+cursor:pointer;
+}
+
+button:disabled{
+background:#aaa;
+}
