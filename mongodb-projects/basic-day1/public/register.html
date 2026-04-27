@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="auth-card">
+        <div class="brand">
+           
+        </div>
+
+        <h1>Create your account</h1>
+        <p class="subtitle">Join us — it only takes a minute.</p>
+
+        <form id="registerForm" novalidate>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <div class="input-wrap">
+                    <span class="icon"></span>
+                    <input type="text" id="fullName" name="fullName" required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="emailAddress">Email Address</label>
+                <div class="input-wrap">
+                    <span class="icon"></span>
+                    <input type="email" id="emailAddress" name="emailAddress" required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="mobileNo">Mobile Number</label>
+                <div class="input-wrap">
+                    <span class="icon"></span>
+                    <input type="tel" id="mobileNo" name="mobileNo"  required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-wrap">
+                    <span class="icon"></span>
+                    <input type="password" id="password" name="password"  required minlength="6" />
+                    <button type="button" class="toggle-password" data-target="password">Show</button>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Create Account</button>
+
+            <div class="message" id="message"></div>
+        </form>
+
+        <p class="alt-action">
+            Already have an account? <a href="login.html">Sign in</a>
+        </p>
+    </main>
+
+    <script src="register.js"></script>
+</body>
+</html>

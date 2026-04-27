@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="auth-card">
+        <div class="brand">
+            
+        </div>
+
+        <h1>Welcome back</h1>
+        <p class="subtitle">Sign in to continue to your account.</p>
+
+        <form id="loginForm" novalidate>
+            <div class="form-group">
+                <label for="emailAddress">Email Address</label>
+                <div class="input-wrap">
+                    <span class="icon"></span>
+                    <input type="email" id="emailAddress" name="emailAddress"  required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-wrap">
+                    <span class="icon"></span>
+                    <input type="password" id="password" name="password"  required />
+                    <button type="button" class="toggle-password" data-target="password">Show</button>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Sign In</button>
+
+            <div class="message" id="message"></div>
+        </form>
+
+        <p class="alt-action">
+            New here? <a href="register.html">Create an account</a>
+        </p>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>
